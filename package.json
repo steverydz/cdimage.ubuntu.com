@@ -1,0 +1,16 @@
+{
+  "name": "cdimage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy --formats=html,scss,css,js,map,svg --input=src --output=_site",
+    "serve": "eleventy --formats=html,scss,css,js,map,svg --input=src --output=_site --watch --serve --port=8080"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "0.11.0"
+  }
+}

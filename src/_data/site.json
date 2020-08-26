@@ -1,0 +1,96 @@
+{
+  "release_name": "Ubuntu 20.10 (Groovy Gorilla)",
+  "copyright_year": "2020",
+  "amd64_image_url": "http://cdimage.ubuntu.com/daily-live/pending/groovy-desktop-amd64.iso",
+  "arm64_image_url": "http://cdimage.ubuntu.com/daily-live/pending/groovy-desktop-arm64.iso",
+  "images": [
+    {
+      "type": "list",
+      "name": "SHA256SUMS",
+      "url": "http://cdimage.ubuntu.com/daily-live/pending/SHA256SUMS",
+      "last_modified": "2020-08-25 10:01",
+      "size": "182",
+      "description": ""
+    },
+    {
+      "type": "list",
+      "name": "SHA256SUMS.gpg",
+      "url": "http://cdimage.ubuntu.com/daily-live/pending/SHA256SUMS.gpg",
+      "last_modified": "2020-08-25 10:01",
+      "size": "833",
+      "description": ""
+    },
+    {
+      "type": "",
+      "name": "groovy-desktop-amd64.OVERSIZED",
+      "url": "http://cdimage.ubuntu.com/daily-live/pending/groovy-desktop-amd64.OVERSIZED",
+      "last_modified": "2020-07-17 14:43",
+      "size": "0",
+      "description": ""
+    },
+    {
+      "type": "iso",
+      "name": "groovy-desktop-amd64.iso",
+      "url": "http://cdimage.ubuntu.com/daily-live/pending/groovy-desktop-amd64.iso",
+      "last_modified": "2020-08-25 10:00",
+      "size": "2.9G",
+      "description": "Desktop image for 64-bit PC (AMD64) computers (standard download)"
+    },
+    {
+      "type": "list",
+      "name": "groovy-desktop-amd64.iso.zsync",
+      "url": "http://cdimage.ubuntu.com/daily-live/pending/groovy-desktop-amd64.iso.zsync",
+      "last_modified": "2020-08-25 10:00",
+      "size": "5.7M",
+      "description": "Desktop image for 64-bit PC (AMD64) computers (<a href='http://zsync.moria.org.uk/'>zsync</a> metafile)"
+    },
+    {
+      "type": "list",
+      "name": "groovy-desktop-amd64.list",
+      "url": "http://cdimage.ubuntu.com/daily-live/pending/groovy-desktop-amd64.list",
+      "last_modified": "2020-08-25 10:00",
+      "size": "18K",
+      "description": "Desktop image for 64-bit PC (AMD64) computers (file listing)"
+    },
+    {
+      "type": "list",
+      "name": "groovy-desktop-amd64.manifest",
+      "url": "http://cdimage.ubuntu.com/daily-live/pending/groovy-desktop-amd64.manifest",
+      "last_modified": "2020-08-25 08:13",
+      "size": "53K",
+      "description": "Desktop image for 64-bit PC (AMD64) computers (contents of live filesystem)"
+    },
+    {
+      "type": "iso",
+      "name": "groovy-desktop-arm64.iso",
+      "url": "http://cdimage.ubuntu.com/daily-live/pending/groovy-desktop-arm64.iso",
+      "last_modified": "2020-08-25 10:00",
+      "size": "2.0G",
+      "description": "Desktop image for 64-bit ARM (ARMv8/AArch64) computers (standard download)"
+    },
+    {
+      "type": "list",
+      "name": "groovy-desktop-arm64.iso.zsync",
+      "url": "http://cdimage.ubuntu.com/daily-live/pending/groovy-desktop-arm64.iso.zsync",
+      "last_modified": "2020-08-25 10:01",
+      "size": "4.1M",
+      "description": "Desktop image for 64-bit ARM (ARMv8/AArch64) computers (<a href='http://zsync.moria.org.uk/'>zsync</a> metafile)"
+    },
+    {
+      "type": "list",
+      "name": "groovy-desktop-arm64.list",
+      "url": "http://cdimage.ubuntu.com/daily-live/pending/groovy-desktop-arm64.list",
+      "last_modified": "2020-08-25 10:00",
+      "size": "942",
+      "description": "Desktop image for 64-bit ARM (ARMv8/AArch64) computers (file listing)"
+    },
+    {
+      "type": "list",
+      "name": "groovy-desktop-arm64.manifest",
+      "url": "http://cdimage.ubuntu.com/daily-live/pending/groovy-desktop-arm64.manifest",
+      "last_modified": "2020-08-25 09:57",
+      "size": "52K",
+      "description": "Desktop image for 64-bit ARM (ARMv8/AArch64) computers (contents of live filesystem)"
+    }
+  ]
+}

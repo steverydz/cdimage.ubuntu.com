@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.release_name }} Daily Build</title>
+  <link rel="preconnect" href="https://assets.ubuntu.com">
+  <link rel="stylesheet" href="https://assets.ubuntu.com/v1/vanilla-framework-version-2.16.0.min.css">
+  <style>
+    .p-strip--image {
+      background-image: url('https://assets.ubuntu.com/v1/775cc62b-vanilla-grad-background.png');
+      background-position: 75% 25%;
+    }
+  </style>
+  <link rel="shortcut icon" href="https://assets.ubuntu.com/v1/49a1a858-favicon-32x32.png" type="image/x-icon">
+  <link rel="apple-touch-icon" href="https://assets.ubuntu.com/v1/17b68252-apple-touch-icon-180x180-precomposed-ubuntu.png">
+  <meta name="description" content="CD images for {{ site.release_name }} Daily Build">
+  <meta name="author" content="Canonical">
+</head>
+<body>
+
+  <header id="navigation" class="p-navigation">
+    <div class="u-fixed-width">
+      <div class="p-navigation__banner">
+        <div class="p-navigation__logo">
+          <a class="p-navigation__link" href="/">
+            <img class="p-navigation__image" src="https://assets.ubuntu.com/v1/411e1474-releases-lockup.svg" width="185" height="24" alt="">
+          </a>
+        </div>
+      </div>
+      <nav class="p-navigation__nav" role="menubar">
+        <span class="u-off-screen">
+          <a href="#pageWrapper">Jump to main content</a>
+        </span>
+      </nav>
+    </div>
+  </header>
+
+  <section class="p-strip--image is-dark">
+    <div class="u-fixed-width">
+      <h1 class="u-no-margin--bottom">{{ site.release_name }} Daily Build</h1>
+    </div>
+  </section>
+
+  <section id="pageWrapper" class="p-strip">
+    <div class="u-fixed-width">
+      <h2>Select an image</h2>
+    </div>
+    <div class="row">
+      <div class="col-7">
+        <h3>Desktop image</h3>
+        <p>The desktop image allows you to try Ubuntu without changing your computer at all, and at your option to install it permanently later. This type of image is what most people will want to use. You will need at least 1024MiB of RAM to install from this image.</p>
+      </div>
+    </div>
+    <div class="row u-equal-height">
+      <div class="col-6 p-card">
+        <h4><a href="{{ site.amd64_image_url }}">64-bit PC (AMD64) desktop image</a></h4>
+        <p>Choose this if you have a computer based on the AMD64 or EM64T architecture (e.g., Athlon64, Opteron, EM64T Xeon, Core 2). Choose this if you are at all unsure.</p>
+        <p><strong>Warning:</strong> This image is oversized (which is a bug) and will not fit onto a standard 703MiB CD. However, you may still test it using a DVD, a USB drive, or a virtual machine.</p>
+      </div>
+      <div class="col-6 p-card">
+        <h4><a href="{{ site.arm64_image_url }}">64-bit ARM (ARMv8/AArch64) desktop image</a></h4>
+        <p>For 64-bit ARMv8 processors and above.</p>
+        <p>For ARM hardware for which we do not ship preinstalled images, see <a class="p-link--external" href="https://wiki.ubuntu.com/ARM/Server/Install">ARM/Server/Install</a> for detailed installation information.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-7">
+        <p>A full list of available files can be found below.</p>
+        <p>If you need help burning these images to disk, see the <a class="p-link--external" href="https://help.ubuntu.com/community/BurningIsoHowto">Image Burning Guide</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-strip u-no-padding--top">
+    <div class="u-fixed-width">
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 5%;">&nbsp;</th>
+            <th style="width: 30%;">Name</th>
+            <th style="width: 15%;">Last modified</th>
+            <th style="width: 10%;">Size</th>
+            <th style="width: 40%;">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="https://assets.ubuntu.com/v1/92cdbbab-back.gif" width="20" height="22" alt=""></td>
+            <td><a href="http://cdimage.ubuntu.com/daily-live">Parent Directory</a></td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          {% for image in site.images %}
+            <tr>
+              <td>
+                {% if image.type == "iso" %}
+                  <img src="https://assets.ubuntu.com/v1/91d34f9b-iso.png" alt="" width="22" height="22">
+                {% elsif image.type == "list" %}
+                  <img src="https://assets.ubuntu.com/v1/3cf8a89d-list.png" alt="" width="22" height="22">
+                {% elsif image.type == "folder" %}
+                  <img src="https://assets.ubuntu.com/v1/aeadf7d2-folder.png" alt="" width="22" height="22">
+                {% elsif image.type == "img" %}
+                  <img src="https://assets.ubuntu.com/v1/9ece9a3b-img.png" alt="" width="22" height="22">
+                {% elsif image.type == "jigdo" %}
+                  <img src="https://assets.ubuntu.com/v1/45b52dcd-jigdo.png" alt="" width="22" height="22">
+                {% elsif image.type == "kubuntu-folder" %}
+                  <img src="https://assets.ubuntu.com/v1/f3f72e58-kubuntu-folder.png" alt="" width="22" height="22">
+                {% elsif image.type == "kubuntu-img" %}
+                  <img src="https://assets.ubuntu.com/v1/4112e1e3-kubuntu-img.png" alt="" width="22" height="22">
+                {% elsif image.type == "kubuntu-iso" %}
+                  <img src="https://assets.ubuntu.com/v1/c7d98757-kubuntu-iso.png" alt="" width="22" height="22">
+                {% elsif image.type == "kubuntu-jigdo" %}
+                  <img src="https://assets.ubuntu.com/v1/aabf14af-kubuntu-jigdo.png" alt="" width="22" height="22">
+                {% elsif image.type == "kubuntu-list" %}
+                  <img src="https://assets.ubuntu.com/v1/4f7538f5-kubuntu-list.png" alt="" width="22" height="22">
+                {% elsif image.type == "kubuntu-torrent" %}
+                  <img src="https://assets.ubuntu.com/v1/0f405b6e-kubuntu-torrent.png" alt="" width="22" height="22">
+                {% elsif image.type == "torrent" %}
+                  <img src="https://assets.ubuntu.com/v1/32d522cc-torrent.png" alt="" width="22" height="22">
+                {% else %}
+                  <img src="https://assets.ubuntu.com/v1/dc1cdfa8-unknown.gif" alt="" width="20" height="22">
+                {% endif %}
+              </td>
+              <td><a href="{{ image.url }}">{{ image.name }}</a></td>
+              <td>{{ image.last_modified }}</td>
+              <td>{{ image.size }}</td>
+              <td>{{ image.description }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <hr class="u-margin--bottom">
+
+  <footer class="p-strip">
+    <div class="u-fixed-width">
+      <p class="u-no-margin--bottom"><small>&copy; {{ site.copyright_year }} Canonical Ltd. Ubuntu and Canonical are registered trademarks of Canonical Ltd.</small></p>
+      <ul class="p-inline-list--middot u-no-margin--bottom">
+        <li class="p-inline-list__item">
+          <a class="p-link--soft" href="https://www.ubuntu.com/legal"><small>Legal information</small></a>
+        </li>
+        <li class="p-inline-list__item">
+          <a class="p-link--soft" href="https://bugs.launchpad.net/ubuntu-cdimage/+filebug"><small>Report a bug on this site</small></a>
+        </li>
+      </ul>
+      <a class="u-off-screen" href="#pageWrapper">Go to the top of the page</a>
+    </div>
+  </footer>
+</body>
+</html>
